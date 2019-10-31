@@ -1,5 +1,5 @@
 {
-  "name": "react-boilerplate",
+  "name": "react-boilerplate-typescript",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -18,15 +18,7 @@
   },
   "author": "Ryan Liu",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://shiang@github.com/shiang/react-boilerplate.git.git"
-  },
   "keywords": [],
-  "bugs": {
-    "url": "https://github.com/shiang/react-boilerplate.git/issues"
-  },
-  "homepage": "https://github.com/shiang/react-boilerplate.git#readme",
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
@@ -65,5 +57,13 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-hot-loader": "^4.12.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiang/react-boilerplate-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shiang/react-boilerplate-typescript/issues"
+  },
+  "homepage": "https://github.com/shiang/react-boilerplate-typescript#readme"
 }
