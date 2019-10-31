@@ -3,7 +3,7 @@ import { hot } from 'react-hot-loader'
 
 const Warning = React.lazy(() => import('./Warning'))
 
-function App() {
+const App: React.FC<{}> = () => {
   const [count, setCount] = useState(0)
   const increment = () => {
     setCount(count + 1)
@@ -16,7 +16,7 @@ function App() {
   return (
     <main>
       <h1>Hello World!!!</h1>
-      <h2 className={count > 10 ? 'warning' : null}>{count}</h2>
+      <h2 className={count > 10 ? 'warning' : undefined}>{count}</h2>
       <button type='button' onClick={increment}>
         +
       </button>
