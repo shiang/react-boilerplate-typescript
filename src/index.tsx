@@ -1,9 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import '@babel/polyfill'
-import App from './App'
-import './style.css'
 import DefaultErrorBoundary from './DefaultErrorBoundary'
+import App from './App'
+import 'core-js/stable'
+import 'regenerator-runtime/runtime'
+
+import './style.css'
 
 if (process.env.NODE_ENV === 'development') {
   const axe = require('react-axe')

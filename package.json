@@ -17,6 +17,26 @@
       "pre-commit": "pretty-quick --staged && npm run lint && npm run check-types && npm run test"
     }
   },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,ts,jsx,tsx}",
+      "!**/node_modules/**",
+      "!**/__tests__/**",
+      "!src/types/**",
+      "!src/testing-utils/**",
+      "!src/graphQL/**"
+    ],
+    "coverageReporters": [
+      "text",
+      "text-summary"
+    ],
+    "projects": [
+      "./test/jest.lint.js",
+      "./test/jest.testing.js",
+      "./test/jest.tsc.js"
+    ]
+  },
   "author": "Ryan Liu",
   "license": "ISC",
   "keywords": [],
@@ -36,18 +56,27 @@
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "babel-plugin-dynamic-import-node": "^2.3.0",
+    "compression-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
     "eslint": "^6.6.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.2.0",
+    "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^3.0.9",
+    "identity-obj-proxy": "^3.0.0",
+    "isomorphic-fetch": "^2.2.1",
     "jest": "^24.9.0",
+    "jest-runner-eslint": "^0.7.5",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "prettier": "^1.18.2",
     "pretty-quick": "^2.0.0",
     "react-axe": "^3.3.0",
     "style-loader": "^1.0.0",
+    "svg-inline-loader": "^0.8.0",
+    "terser-webpack-plugin": "^2.2.1",
     "typescript": "^3.6.4",
     "webpack": "^4.41.2",
     "webpack-bundle-analyzer": "^3.6.0",
@@ -59,10 +88,12 @@
     "@babel/polyfill": "^7.6.0",
     "@hot-loader/react-dom": "^16.10.2",
     "core-js": "3",
+    "dotenv": "^8.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-hot-loader": "^4.12.15"
+    "react-hot-loader": "^4.12.15",
+    "regenerator-runtime": "^0.13.3"
   },
   "repository": {
     "type": "git",
