@@ -15,7 +15,7 @@ const App: React.FC<{}> = () => {
 
   return (
     <main>
-      <h1>Hello World!!!</h1>
+      <h1>Hello React!!!</h1>
       <h2 className={count > 10 ? 'warning' : undefined}>{count}</h2>
       <button type='button' onClick={increment}>
         +
